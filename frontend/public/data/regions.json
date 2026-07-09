@@ -1,0 +1,62 @@
+[
+  {
+    "id": "hudson-valley",
+    "name": "Hudson Valley Corridor",
+    "jurisdiction": "Albany to Westchester counties",
+    "state": "NY",
+    "lat": 41.71,
+    "lon": -73.93,
+    "population": 2420000,
+    "officialAdvisoryUrl": "https://www.health.ny.gov/"
+  },
+  {
+    "id": "finger-lakes",
+    "name": "Finger Lakes Basin",
+    "jurisdiction": "Central and western New York",
+    "state": "NY",
+    "lat": 42.73,
+    "lon": -76.68,
+    "population": 1320000,
+    "officialAdvisoryUrl": "https://www.dec.ny.gov/"
+  },
+  {
+    "id": "lake-erie-shore",
+    "name": "Lake Erie Shore",
+    "jurisdiction": "Erie, Chautauqua, and Niagara counties",
+    "state": "NY",
+    "lat": 42.89,
+    "lon": -78.87,
+    "population": 1160000,
+    "officialAdvisoryUrl": "https://www.health.ny.gov/"
+  },
+  {
+    "id": "long-island-sound",
+    "name": "Long Island Sound",
+    "jurisdiction": "Nassau, Suffolk, and Queens shoreline",
+    "state": "NY",
+    "lat": 40.86,
+    "lon": -73.15,
+    "population": 3100000,
+    "officialAdvisoryUrl": "https://www.health.ny.gov/"
+  },
+  {
+    "id": "adirondack-north-country",
+    "name": "Adirondack North Country",
+    "jurisdiction": "Clinton, Essex, Franklin, Hamilton, and Warren counties",
+    "state": "NY",
+    "lat": 44.25,
+    "lon": -73.91,
+    "population": 322000,
+    "officialAdvisoryUrl": "https://www.health.ny.gov/"
+  },
+  {
+    "id": "nyc-metro",
+    "name": "NYC Metro",
+    "jurisdiction": "New York City boroughs",
+    "state": "NY",
+    "lat": 40.71,
+    "lon": -74.01,
+    "population": 8460000,
+    "officialAdvisoryUrl": "https://www.nyc.gov/site/doh/index.page"
+  }
+]

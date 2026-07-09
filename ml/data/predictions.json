@@ -1,0 +1,1452 @@
+[
+  {
+    "lakeId": "lake-ronkonkoma",
+    "observedDate": "2026-06-20",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "medium",
+    "ndciMean": 0.309,
+    "ndwiMean": 0.283,
+    "faiMean": 0.0261,
+    "cyanoProxy": 0.245,
+    "temp7d": 26.1,
+    "rainfall7d": 2.23,
+    "validPixelCount": 19,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 11.101
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.753
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.591
+      }
+    ]
+  },
+  {
+    "lakeId": "blydenburgh-pond",
+    "observedDate": "2026-06-23",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.139,
+    "ndwiMean": 0.27,
+    "faiMean": 0.0023,
+    "cyanoProxy": 0.023,
+    "temp7d": 26.6,
+    "rainfall7d": 1.75,
+    "validPixelCount": 61,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 0.822
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.603
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      }
+    ]
+  },
+  {
+    "lakeId": "canopus-lake",
+    "observedDate": "2026-06-21",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "medium",
+    "ndciMean": 0.259,
+    "ndwiMean": 0.461,
+    "faiMean": 0.0234,
+    "cyanoProxy": 0.075,
+    "temp7d": 23.1,
+    "rainfall7d": 0.69,
+    "validPixelCount": 35,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 2.832
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.169
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.523
+      }
+    ]
+  },
+  {
+    "lakeId": "lake-mahopac",
+    "observedDate": "2026-06-20",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "medium",
+    "ndciMean": 0.23,
+    "ndwiMean": 0.308,
+    "faiMean": 0.0081,
+    "cyanoProxy": 0.047,
+    "temp7d": 18.5,
+    "rainfall7d": 1.15,
+    "validPixelCount": 23,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 11.01
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.169
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.419
+      }
+    ]
+  },
+  {
+    "lakeId": "greenwood-lake",
+    "observedDate": "2026-06-23",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.165,
+    "ndwiMean": 0.389,
+    "faiMean": 0.0089,
+    "cyanoProxy": 0,
+    "temp7d": 20.3,
+    "rainfall7d": 0.17,
+    "validPixelCount": 92,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 34.811
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.46
+      }
+    ]
+  },
+  {
+    "lakeId": "lake-waramaug",
+    "observedDate": "2026-06-21",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.312,
+    "ndwiMean": 0.457,
+    "faiMean": 0.0224,
+    "cyanoProxy": 0.089,
+    "temp7d": 23.4,
+    "rainfall7d": 2.09,
+    "validPixelCount": 28,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 11.832
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.53
+      }
+    ]
+  },
+  {
+    "lakeId": "crystal-lake",
+    "observedDate": "2026-06-24",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.179,
+    "ndwiMean": 0.411,
+    "faiMean": 0.0008,
+    "cyanoProxy": 0,
+    "temp7d": 25.6,
+    "rainfall7d": 1.34,
+    "validPixelCount": 39,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 2.056
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.58
+      },
+      {
+        "name": "rainfall_7d",
+        "contribution": 0.03
+      }
+    ]
+  },
+  {
+    "lakeId": "lake-george",
+    "observedDate": "2026-06-23",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.151,
+    "ndwiMean": 0.478,
+    "faiMean": 0.003,
+    "cyanoProxy": 0,
+    "temp7d": 21.9,
+    "rainfall7d": 1.92,
+    "validPixelCount": 15,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 202.105
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.496
+      },
+      {
+        "name": "rainfall_7d",
+        "contribution": 0.044
+      }
+    ]
+  },
+  {
+    "lakeId": "lake-placid",
+    "observedDate": "2026-06-19",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.299,
+    "ndwiMean": 0.32,
+    "faiMean": 0.0074,
+    "cyanoProxy": 0.175,
+    "temp7d": 24.8,
+    "rainfall7d": 1.79,
+    "validPixelCount": 35,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 40.658
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.562
+      }
+    ]
+  },
+  {
+    "lakeId": "mirror-lake",
+    "observedDate": "2026-06-20",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.262,
+    "ndwiMean": 0.338,
+    "faiMean": 0.0028,
+    "cyanoProxy": 0.021,
+    "temp7d": 24.7,
+    "rainfall7d": 0.66,
+    "validPixelCount": 82,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 2.193
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.56
+      }
+    ]
+  },
+  {
+    "lakeId": "oneida-lake",
+    "observedDate": "2026-06-24",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "medium",
+    "ndciMean": 0.429,
+    "ndwiMean": 0.266,
+    "faiMean": 0.0563,
+    "cyanoProxy": 0.304,
+    "temp7d": 19.1,
+    "rainfall7d": 0.12,
+    "validPixelCount": 22,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 945.652
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 2.338
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.433
+      }
+    ]
+  },
+  {
+    "lakeId": "cayuga-lake",
+    "observedDate": "2026-06-26",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "high",
+    "ndciMean": 0.384,
+    "ndwiMean": 0.327,
+    "faiMean": 0.0226,
+    "cyanoProxy": 0.191,
+    "temp7d": 30.0,
+    "rainfall7d": 1.32,
+    "validPixelCount": 78,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 785.759
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.753
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.68
+      }
+    ]
+  },
+  {
+    "lakeId": "seneca-lake",
+    "observedDate": "2026-06-19",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "medium",
+    "ndciMean": 0.268,
+    "ndwiMean": 0.465,
+    "faiMean": 0.0278,
+    "cyanoProxy": 0.195,
+    "temp7d": 22.1,
+    "rainfall7d": 0.73,
+    "validPixelCount": 28,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 799.464
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.169
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.501
+      }
+    ]
+  },
+  {
+    "lakeId": "keuka-lake",
+    "observedDate": "2026-06-22",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.199,
+    "ndwiMean": 0.416,
+    "faiMean": 0.0091,
+    "cyanoProxy": 0.05,
+    "temp7d": 24.1,
+    "rainfall7d": 0.27,
+    "validPixelCount": 88,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 210.145
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.546
+      }
+    ]
+  },
+  {
+    "lakeId": "skaneateles-lake",
+    "observedDate": "2026-06-21",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "low",
+    "ndciMean": 0.218,
+    "ndwiMean": 0.26,
+    "faiMean": 0.0043,
+    "cyanoProxy": 0.004,
+    "temp7d": 29.4,
+    "rainfall7d": 2.31,
+    "validPixelCount": 8,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 164.461
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.666
+      },
+      {
+        "name": "rainfall_7d",
+        "contribution": 0.053
+      }
+    ]
+  },
+  {
+    "lakeId": "otsego-lake",
+    "observedDate": "2026-06-25",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.193,
+    "ndwiMean": 0.309,
+    "faiMean": 0.0191,
+    "cyanoProxy": 0.117,
+    "temp7d": 20.9,
+    "rainfall7d": 0.6,
+    "validPixelCount": 80,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 34.72
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.473
+      }
+    ]
+  },
+  {
+    "lakeId": "chautauqua-lake",
+    "observedDate": "2026-06-24",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "high",
+    "ndciMean": 0.293,
+    "ndwiMean": 0.221,
+    "faiMean": 0.0257,
+    "cyanoProxy": 0.181,
+    "temp7d": 19.5,
+    "rainfall7d": 1.19,
+    "validPixelCount": 78,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 242.124
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.753
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.442
+      }
+    ]
+  },
+  {
+    "lakeId": "conesus-lake",
+    "observedDate": "2026-06-20",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "medium",
+    "ndciMean": 0.298,
+    "ndwiMean": 0.327,
+    "faiMean": 0.0087,
+    "cyanoProxy": 0.109,
+    "temp7d": 26.8,
+    "rainfall7d": 0.5,
+    "validPixelCount": 47,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 63.957
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.169
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.607
+      }
+    ]
+  },
+  {
+    "lakeId": "honeoye-lake",
+    "observedDate": "2026-06-18",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "high",
+    "ndciMean": 0.465,
+    "ndwiMean": 0.331,
+    "faiMean": 0.0487,
+    "cyanoProxy": 0.258,
+    "temp7d": 20.7,
+    "rainfall7d": 0.85,
+    "validPixelCount": 83,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 31.979
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 2.338
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.469
+      }
+    ]
+  },
+  {
+    "lakeId": "canandaigua-lake",
+    "observedDate": "2026-06-18",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.174,
+    "ndwiMean": 0.221,
+    "faiMean": 0.0068,
+    "cyanoProxy": 0,
+    "temp7d": 28.9,
+    "rainfall7d": 2.15,
+    "validPixelCount": 17,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 191.871
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.655
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      }
+    ]
+  },
+  {
+    "lakeId": "owasco-lake",
+    "observedDate": "2026-06-19",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "high",
+    "ndciMean": 0.274,
+    "ndwiMean": 0.264,
+    "faiMean": 0.0066,
+    "cyanoProxy": 0.165,
+    "temp7d": 24.9,
+    "rainfall7d": 1.18,
+    "validPixelCount": 108,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 118.778
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.169
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.564
+      }
+    ]
+  },
+  {
+    "lakeId": "onondaga-lake",
+    "observedDate": "2026-06-25",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "high",
+    "ndciMean": 0.452,
+    "ndwiMean": 0.229,
+    "faiMean": 0.0528,
+    "cyanoProxy": 0.339,
+    "temp7d": 23.6,
+    "rainfall7d": 1.82,
+    "validPixelCount": 94,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 54.82
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 2.922
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.535
+      }
+    ]
+  },
+  {
+    "lakeId": "cross-lake",
+    "observedDate": "2026-06-22",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "medium",
+    "ndciMean": 0.26,
+    "ndwiMean": 0.44,
+    "faiMean": 0.0026,
+    "cyanoProxy": 0.031,
+    "temp7d": 24.4,
+    "rainfall7d": 0.35,
+    "validPixelCount": 31,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 19.644
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.169
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.553
+      }
+    ]
+  },
+  {
+    "lakeId": "oneida-creek-reservoir",
+    "observedDate": "2026-06-26",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.266,
+    "ndwiMean": 0.223,
+    "faiMean": 0.015,
+    "cyanoProxy": 0.121,
+    "temp7d": 19.2,
+    "rainfall7d": 1.63,
+    "validPixelCount": 77,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 5.482
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.435
+      }
+    ]
+  },
+  {
+    "lakeId": "delta-lake",
+    "observedDate": "2026-06-24",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.328,
+    "ndwiMean": 0.455,
+    "faiMean": 0.0123,
+    "cyanoProxy": 0.129,
+    "temp7d": 20.6,
+    "rainfall7d": 1.0,
+    "validPixelCount": 15,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 12.791
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.467
+      }
+    ]
+  },
+  {
+    "lakeId": "saratoga-lake",
+    "observedDate": "2026-06-18",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "high",
+    "ndciMean": 0.322,
+    "ndwiMean": 0.28,
+    "faiMean": 0.0225,
+    "cyanoProxy": 0.111,
+    "temp7d": 23.1,
+    "rainfall7d": 2.39,
+    "validPixelCount": 108,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 26.497
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.169
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.523
+      }
+    ]
+  },
+  {
+    "lakeId": "ballston-lake",
+    "observedDate": "2026-06-26",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.25,
+    "ndwiMean": 0.257,
+    "faiMean": 0.0072,
+    "cyanoProxy": 0.027,
+    "temp7d": 26.8,
+    "rainfall7d": 0.15,
+    "validPixelCount": 48,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 17.36
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.607
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      }
+    ]
+  },
+  {
+    "lakeId": "great-south-bay",
+    "observedDate": "2026-06-25",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "medium",
+    "ndciMean": 0.234,
+    "ndwiMean": 0.476,
+    "faiMean": 0.0108,
+    "cyanoProxy": 0.01,
+    "temp7d": 24.1,
+    "rainfall7d": 2.13,
+    "validPixelCount": 16,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 292.376
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.169
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.546
+      }
+    ]
+  },
+  {
+    "lakeId": "montauk-lake",
+    "observedDate": "2026-06-18",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.226,
+    "ndwiMean": 0.236,
+    "faiMean": 0.0209,
+    "cyanoProxy": 0.056,
+    "temp7d": 25.1,
+    "rainfall7d": 1.55,
+    "validPixelCount": 61,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 2.01
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.569
+      }
+    ]
+  },
+  {
+    "lakeId": "nassau-lake",
+    "observedDate": "2026-06-21",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.134,
+    "ndwiMean": 0.401,
+    "faiMean": 0,
+    "cyanoProxy": 0,
+    "temp7d": 19.6,
+    "rainfall7d": 1.61,
+    "validPixelCount": 66,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 1.462
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.444
+      },
+      {
+        "name": "rainfall_7d",
+        "contribution": 0.037
+      }
+    ]
+  },
+  {
+    "lakeId": "argyle-lake",
+    "observedDate": "2026-06-22",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.325,
+    "ndwiMean": 0.203,
+    "faiMean": 0.0206,
+    "cyanoProxy": 0.136,
+    "temp7d": 19.2,
+    "rainfall7d": 1.34,
+    "validPixelCount": 72,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 1.827
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.435
+      }
+    ]
+  },
+  {
+    "lakeId": "upper-lake",
+    "observedDate": "2026-06-18",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "medium",
+    "ndciMean": 0.23,
+    "ndwiMean": 0.221,
+    "faiMean": 0.0067,
+    "cyanoProxy": 0.054,
+    "temp7d": 23.3,
+    "rainfall7d": 1.36,
+    "validPixelCount": 46,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.169
+      },
+      {
+        "name": "lake_area_ha",
+        "contribution": 1.142
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.528
+      }
+    ]
+  },
+  {
+    "lakeId": "lower-lake",
+    "observedDate": "2026-06-18",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.209,
+    "ndwiMean": 0.29,
+    "faiMean": 0.003,
+    "cyanoProxy": 0.077,
+    "temp7d": 19.6,
+    "rainfall7d": 0.29,
+    "validPixelCount": 21,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 1.371
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.444
+      }
+    ]
+  },
+  {
+    "lakeId": "wampus-pond",
+    "observedDate": "2026-06-26",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.118,
+    "ndwiMean": 0.263,
+    "faiMean": 0,
+    "cyanoProxy": 0,
+    "temp7d": 28.2,
+    "rainfall7d": 1.26,
+    "validPixelCount": 40,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.639
+      },
+      {
+        "name": "lake_area_ha",
+        "contribution": 0.548
+      },
+      {
+        "name": "rainfall_7d",
+        "contribution": 0.029
+      }
+    ]
+  },
+  {
+    "lakeId": "muscle-shoals",
+    "observedDate": "2026-06-19",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.125,
+    "ndwiMean": 0.283,
+    "faiMean": 0,
+    "cyanoProxy": 0.002,
+    "temp7d": 25.6,
+    "rainfall7d": 0.65,
+    "validPixelCount": 102,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.58
+      },
+      {
+        "name": "lake_area_ha",
+        "contribution": 0.365
+      },
+      {
+        "name": "rainfall_7d",
+        "contribution": 0.015
+      }
+    ]
+  },
+  {
+    "lakeId": "croton-reservoir",
+    "observedDate": "2026-06-21",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.177,
+    "ndwiMean": 0.203,
+    "faiMean": 0,
+    "cyanoProxy": 0.076,
+    "temp7d": 28.8,
+    "rainfall7d": 1.36,
+    "validPixelCount": 114,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 8.223
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.652
+      },
+      {
+        "name": "rainfall_7d",
+        "contribution": 0.031
+      }
+    ]
+  },
+  {
+    "lakeId": "kensico-reservoir",
+    "observedDate": "2026-06-23",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.153,
+    "ndwiMean": 0.238,
+    "faiMean": 0,
+    "cyanoProxy": 0.083,
+    "temp7d": 27.6,
+    "rainfall7d": 2.15,
+    "validPixelCount": 53,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 42.029
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.625
+      },
+      {
+        "name": "rainfall_7d",
+        "contribution": 0.049
+      }
+    ]
+  },
+  {
+    "lakeId": "neversink-reservoir",
+    "observedDate": "2026-06-24",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.27,
+    "ndwiMean": 0.306,
+    "faiMean": 0.0144,
+    "cyanoProxy": 0.151,
+    "temp7d": 29.7,
+    "rainfall7d": 1.87,
+    "validPixelCount": 38,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 25.126
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.673
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      }
+    ]
+  },
+  {
+    "lakeId": "ashokan-reservoir",
+    "observedDate": "2026-06-23",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.263,
+    "ndwiMean": 0.464,
+    "faiMean": 0.0,
+    "cyanoProxy": 0.108,
+    "temp7d": 22.0,
+    "rainfall7d": 2.33,
+    "validPixelCount": 110,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 155.325
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.498
+      },
+      {
+        "name": "rainfall_7d",
+        "contribution": 0.053
+      }
+    ]
+  },
+  {
+    "lakeId": "cooper-lake",
+    "observedDate": "2026-06-21",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.235,
+    "ndwiMean": 0.232,
+    "faiMean": 0.0124,
+    "cyanoProxy": 0.097,
+    "temp7d": 20.7,
+    "rainfall7d": 2.04,
+    "validPixelCount": 66,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 5.482
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.469
+      }
+    ]
+  },
+  {
+    "lakeId": "mohonk-lake",
+    "observedDate": "2026-06-22",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.186,
+    "ndwiMean": 0.268,
+    "faiMean": 0,
+    "cyanoProxy": 0,
+    "temp7d": 21.9,
+    "rainfall7d": 2.16,
+    "validPixelCount": 106,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 1.279
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.496
+      },
+      {
+        "name": "rainfall_7d",
+        "contribution": 0.049
+      }
+    ]
+  },
+  {
+    "lakeId": "minnewaska",
+    "observedDate": "2026-06-24",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.163,
+    "ndwiMean": 0.404,
+    "faiMean": 0.0039,
+    "cyanoProxy": 0,
+    "temp7d": 18.3,
+    "rainfall7d": 2.19,
+    "validPixelCount": 41,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.415
+      },
+      {
+        "name": "lake_area_ha",
+        "contribution": 0.365
+      },
+      {
+        "name": "rainfall_7d",
+        "contribution": 0.05
+      }
+    ]
+  },
+  {
+    "lakeId": "harlem-meer",
+    "observedDate": "2026-06-25",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.29,
+    "ndwiMean": 0.211,
+    "faiMean": 0.0131,
+    "cyanoProxy": 0.059,
+    "temp7d": 27.4,
+    "rainfall7d": 1.09,
+    "validPixelCount": 73,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.621
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "lake_area_ha",
+        "contribution": 0.183
+      }
+    ]
+  },
+  {
+    "lakeId": "central-park-lake",
+    "observedDate": "2026-06-23",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.227,
+    "ndwiMean": 0.276,
+    "faiMean": 0.0115,
+    "cyanoProxy": 0,
+    "temp7d": 29.1,
+    "rainfall7d": 1.35,
+    "validPixelCount": 100,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.659
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "lake_area_ha",
+        "contribution": 0.274
+      }
+    ]
+  },
+  {
+    "lakeId": "prospect-park-lake",
+    "observedDate": "2026-06-18",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "medium",
+    "ndciMean": 0.228,
+    "ndwiMean": 0.399,
+    "faiMean": 0.0131,
+    "cyanoProxy": 0.088,
+    "temp7d": 28.2,
+    "rainfall7d": 1.8,
+    "validPixelCount": 46,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.169
+      },
+      {
+        "name": "lake_area_ha",
+        "contribution": 0.959
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.639
+      }
+    ]
+  },
+  {
+    "lakeId": "jamaica-bay",
+    "observedDate": "2026-06-24",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "high",
+    "ndciMean": 0.202,
+    "ndwiMean": 0.321,
+    "faiMean": 0.0017,
+    "cyanoProxy": 0,
+    "temp7d": 23.0,
+    "rainfall7d": 2.35,
+    "validPixelCount": 94,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 296.944
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.521
+      }
+    ]
+  },
+  {
+    "lakeId": "irondequoit-bay",
+    "observedDate": "2026-06-21",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "high",
+    "ndciMean": 0.28,
+    "ndwiMean": 0.364,
+    "faiMean": 0.0115,
+    "cyanoProxy": 0.115,
+    "temp7d": 23.2,
+    "rainfall7d": 1.45,
+    "validPixelCount": 91,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 31.522
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.169
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.526
+      }
+    ]
+  },
+  {
+    "lakeId": "hemlock-lake",
+    "observedDate": "2026-06-22",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.169,
+    "ndwiMean": 0.264,
+    "faiMean": 0,
+    "cyanoProxy": 0.068,
+    "temp7d": 27.6,
+    "rainfall7d": 0.42,
+    "validPixelCount": 18,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 33.349
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.625
+      },
+      {
+        "name": "ndci_max",
+        "contribution": 0.019
+      }
+    ]
+  },
+  {
+    "lakeId": "lamoka-lake",
+    "observedDate": "2026-06-24",
+    "riskScore": 1.0,
+    "riskLevel": "very_high",
+    "confidence": "medium",
+    "ndciMean": 0.356,
+    "ndwiMean": 0.301,
+    "faiMean": 0.0355,
+    "cyanoProxy": 0.232,
+    "temp7d": 26.1,
+    "rainfall7d": 0.56,
+    "validPixelCount": 33,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 14.071
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 1.753
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.591
+      }
+    ]
+  },
+  {
+    "lakeId": "waneta-lake",
+    "observedDate": "2026-06-20",
+    "riskScore": 0.0,
+    "riskLevel": "low",
+    "confidence": "medium",
+    "ndciMean": 0.154,
+    "ndwiMean": 0.343,
+    "faiMean": 0.0071,
+    "cyanoProxy": 0,
+    "temp7d": 23.0,
+    "rainfall7d": 1.57,
+    "validPixelCount": 32,
+    "modelVersion": "rf-v1.0.0",
+    "topFeatures": [
+      {
+        "name": "lake_area_ha",
+        "contribution": 15.989
+      },
+      {
+        "name": "prior_bloom_season",
+        "contribution": 0.584
+      },
+      {
+        "name": "temp_7d_mean",
+        "contribution": 0.521
+      }
+    ]
+  }
+]

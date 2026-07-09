@@ -1,0 +1,20 @@
+{
+  "roc_auc_mean": 1.0,
+  "f1_mean": 1.0,
+  "n_samples": 200,
+  "n_lakes": 50,
+  "feature_importances": {
+    "ndci_mean": 0.05849154994010643,
+    "ndci_max": 0.09522478962301162,
+    "ndwi_mean": 0.02221066621759227,
+    "fai_mean": 0.08095198960917564,
+    "cyano_proxy": 0.06763260794465531,
+    "temp_7d_mean": 0.02265269712410517,
+    "rainfall_7d": 0.02272947165380509,
+    "lake_area_ha": 0.045683680336789344,
+    "prior_bloom_season": 0.5844225475507591,
+    "day_sin": 0.0,
+    "day_cos": 0.0
+  },
+  "model_version": "rf-v1.0.0"
+}

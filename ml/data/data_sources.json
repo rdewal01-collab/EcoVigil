@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-06-27",
+  "sources": [
+    {
+      "id": "sentinel-2-l2a",
+      "name": "Copernicus Sentinel-2 L2A",
+      "provider": "ESA Copernicus Data Space",
+      "url": "https://dataspace.copernicus.eu",
+      "license": "Copernicus free and open",
+      "variables": ["surface reflectance B2-B12"],
+      "updateFrequency": "~5 days"
+    },
+    {
+      "id": "nyhabs",
+      "name": "NYSDEC Harmful Algal Bloom System",
+      "provider": "New York State DEC",
+      "url": "https://www.dec.ny.gov/environmental-protection/harmful-algal-blooms",
+      "license": "Public domain",
+      "variables": ["confirmed bloom reports", "GPS", "photos"],
+      "updateFrequency": "Daily during bloom season"
+    },
+    {
+      "id": "nhdplus",
+      "name": "USGS NHDPlus HR",
+      "provider": "USGS",
+      "url": "https://www.usgs.gov/national-hydrography",
+      "license": "Public domain",
+      "variables": ["lake polygons", "watershed boundaries"],
+      "updateFrequency": "Static"
+    },
+    {
+      "id": "openweather",
+      "name": "OpenWeather API",
+      "provider": "OpenWeather",
+      "url": "https://openweathermap.org/api",
+      "license": "Free tier",
+      "variables": ["temperature", "rainfall", "wind"],
+      "updateFrequency": "Hourly"
+    },
+    {
+      "id": "usgs-nwis",
+      "name": "USGS National Water Information System",
+      "provider": "USGS",
+      "url": "https://waterdata.usgs.gov",
+      "license": "Public domain",
+      "variables": ["streamflow", "water temperature"],
+      "updateFrequency": "15 minutes"
+    }
+  ]
+}

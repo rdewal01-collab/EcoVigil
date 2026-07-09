@@ -1,0 +1,42 @@
+[
+  {
+    "id": "rpt-001",
+    "regionId": "hudson-valley",
+    "description": "Cluster of GI symptoms reported after private well exposure near a flood-affected road.",
+    "tags": ["water_contamination", "disease_outbreak"],
+    "lat": 41.65,
+    "lon": -73.77,
+    "verified": true,
+    "createdAt": "2026-07-08T12:30:00Z"
+  },
+  {
+    "id": "rpt-002",
+    "regionId": "finger-lakes",
+    "description": "Green surface streaks and shoreline odor observed at a public access point.",
+    "tags": ["algal_bloom", "water_contamination"],
+    "lat": 42.77,
+    "lon": -76.88,
+    "verified": true,
+    "createdAt": "2026-07-08T15:10:00Z"
+  },
+  {
+    "id": "rpt-003",
+    "regionId": "adirondack-north-country",
+    "description": "Tick exposure reports increased after trail events and warm wet weather.",
+    "tags": ["tick_borne"],
+    "lat": 44.28,
+    "lon": -73.98,
+    "verified": false,
+    "createdAt": "2026-07-07T09:45:00Z"
+  },
+  {
+    "id": "rpt-004",
+    "regionId": "long-island-sound",
+    "description": "High respiratory irritation complaints aligned with pollen and coastal water flags.",
+    "tags": ["allergy_signal", "water_contamination"],
+    "lat": 40.88,
+    "lon": -73.3,
+    "verified": true,
+    "createdAt": "2026-07-08T17:20:00Z"
+  }
+]

@@ -1,0 +1,43 @@
+name: Update Bloom Predictions
+
+on:
+  schedule:
+    - cron: "0 12 * * 1" # Weekly Monday noon UTC
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ML dependencies
+        run: |
+          python -m venv ml/.venv
+          source ml/.venv/bin/activate
+          pip install numpy pandas scikit-learn
+
+      - name: Generate sample data if missing
+        run: python scripts/generate_sample_data.py
+
+      - name: Train model
+        run: |
+          source ml/.venv/bin/activate
+          python ml/train.py
+
+      - name: Run predictions
+        run: |
+          source ml/.venv/bin/activate
+          python ml/predict.py
+
+      - name: Commit updated predictions
+        run: |
+          git config user.name "BlueWatch Bot"
+          git config user.email "bot@bluewatch.ai"
+          git add ml/data/predictions.json ml/metrics.json frontend/public/data/predictions.json ml/data/training_features.csv || true
+          git diff --staged --quiet || git commit -m "chore: update weekly bloom predictions"
+          git push || echo "No push (expected on fork/PR)"

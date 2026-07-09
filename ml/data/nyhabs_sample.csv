@@ -1,0 +1,10 @@
+lake_name,county,report_date,status,lat,lon
+Lake Ronkonkoma,Suffolk,2024-07-15,Confirmed,40.8128,-73.1134
+Lake Ronkonkoma,Suffolk,2024-08-02,Confirmed,40.8128,-73.1134
+Honeoye Lake,Ontario,2024-07-22,Confirmed,42.7333,-77.5167
+Honeoye Lake,Ontario,2024-08-10,Confirmed,42.7333,-77.5167
+Onondaga Lake,Onondaga,2024-07-08,Confirmed,43.0833,-76.2167
+Oneida Lake,Oswego,2024-08-01,Confirmed,43.2000,-75.9333
+Chautauqua Lake,Chautauqua,2024-07-30,Confirmed,42.1167,-79.3667
+Prospect Park Lake,Kings,2024-08-05,Confirmed,40.6600,-73.9683
+Blydenburgh Pond,Suffolk,2024-07-18,Confirmed,40.8617,-73.3656

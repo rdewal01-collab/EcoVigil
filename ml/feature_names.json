@@ -1,0 +1,13 @@
+[
+  "ndci_mean",
+  "ndci_max",
+  "ndwi_mean",
+  "fai_mean",
+  "cyano_proxy",
+  "temp_7d_mean",
+  "rainfall_7d",
+  "lake_area_ha",
+  "prior_bloom_season",
+  "day_sin",
+  "day_cos"
+]

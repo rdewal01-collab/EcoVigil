@@ -1,0 +1,134 @@
+[
+  {
+    "regionId": "hudson-valley",
+    "observedDate": "2026-07-08",
+    "riskScore": 0.78,
+    "riskLevel": "critical",
+    "confidence": "high",
+    "primaryCategory": "water_contamination",
+    "activeSignals": ["water_contamination", "disease_outbreak", "allergy_signal"],
+    "nndssSignal": 0.68,
+    "waterSignal": 0.91,
+    "bloomSignal": 0.43,
+    "tickSignal": 0.52,
+    "ncdSignal": 0.46,
+    "allergySignal": 0.71,
+    "reportVolume7d": 42,
+    "modelVersion": "vigireal-risk-v0.1",
+    "topFeatures": [
+      { "name": "water_signal", "contribution": 0.31 },
+      { "name": "nndss_signal", "contribution": 0.22 },
+      { "name": "report_volume_7d", "contribution": 0.18 }
+    ]
+  },
+  {
+    "regionId": "finger-lakes",
+    "observedDate": "2026-07-08",
+    "riskScore": 0.74,
+    "riskLevel": "high",
+    "confidence": "high",
+    "primaryCategory": "algal_bloom",
+    "activeSignals": ["algal_bloom", "water_contamination"],
+    "nndssSignal": 0.34,
+    "waterSignal": 0.72,
+    "bloomSignal": 0.88,
+    "tickSignal": 0.39,
+    "ncdSignal": 0.41,
+    "allergySignal": 0.45,
+    "reportVolume7d": 28,
+    "modelVersion": "vigireal-risk-v0.1",
+    "topFeatures": [
+      { "name": "bloom_signal", "contribution": 0.36 },
+      { "name": "water_signal", "contribution": 0.21 },
+      { "name": "report_volume_7d", "contribution": 0.14 }
+    ]
+  },
+  {
+    "regionId": "lake-erie-shore",
+    "observedDate": "2026-07-07",
+    "riskScore": 0.63,
+    "riskLevel": "high",
+    "confidence": "medium",
+    "primaryCategory": "algal_bloom",
+    "activeSignals": ["algal_bloom", "disease_outbreak"],
+    "nndssSignal": 0.59,
+    "waterSignal": 0.56,
+    "bloomSignal": 0.77,
+    "tickSignal": 0.31,
+    "ncdSignal": 0.37,
+    "allergySignal": 0.33,
+    "reportVolume7d": 21,
+    "modelVersion": "vigireal-risk-v0.1",
+    "topFeatures": [
+      { "name": "bloom_signal", "contribution": 0.29 },
+      { "name": "nndss_signal", "contribution": 0.19 },
+      { "name": "wastewater_trend", "contribution": 0.12 }
+    ]
+  },
+  {
+    "regionId": "long-island-sound",
+    "observedDate": "2026-07-08",
+    "riskScore": 0.51,
+    "riskLevel": "high",
+    "confidence": "medium",
+    "primaryCategory": "allergy_signal",
+    "activeSignals": ["allergy_signal", "water_contamination"],
+    "nndssSignal": 0.42,
+    "waterSignal": 0.58,
+    "bloomSignal": 0.49,
+    "tickSignal": 0.44,
+    "ncdSignal": 0.54,
+    "allergySignal": 0.82,
+    "reportVolume7d": 33,
+    "modelVersion": "vigireal-risk-v0.1",
+    "topFeatures": [
+      { "name": "allergy_signal", "contribution": 0.27 },
+      { "name": "water_signal", "contribution": 0.16 },
+      { "name": "ncd_signal", "contribution": 0.13 }
+    ]
+  },
+  {
+    "regionId": "adirondack-north-country",
+    "observedDate": "2026-07-06",
+    "riskScore": 0.47,
+    "riskLevel": "moderate",
+    "confidence": "medium",
+    "primaryCategory": "tick_borne",
+    "activeSignals": ["tick_borne"],
+    "nndssSignal": 0.39,
+    "waterSignal": 0.29,
+    "bloomSignal": 0.26,
+    "tickSignal": 0.81,
+    "ncdSignal": 0.25,
+    "allergySignal": 0.48,
+    "reportVolume7d": 18,
+    "modelVersion": "vigireal-risk-v0.1",
+    "topFeatures": [
+      { "name": "tick_signal", "contribution": 0.34 },
+      { "name": "vector_density", "contribution": 0.22 },
+      { "name": "report_volume_7d", "contribution": 0.1 }
+    ]
+  },
+  {
+    "regionId": "nyc-metro",
+    "observedDate": "2026-07-08",
+    "riskScore": 0.38,
+    "riskLevel": "moderate",
+    "confidence": "high",
+    "primaryCategory": "disease_outbreak",
+    "activeSignals": ["disease_outbreak", "ncd_signal", "allergy_signal"],
+    "nndssSignal": 0.57,
+    "waterSignal": 0.33,
+    "bloomSignal": 0.15,
+    "tickSignal": 0.18,
+    "ncdSignal": 0.69,
+    "allergySignal": 0.62,
+    "reportVolume7d": 55,
+    "modelVersion": "vigireal-risk-v0.1",
+    "topFeatures": [
+      { "name": "nndss_signal", "contribution": 0.2 },
+      { "name": "ncd_signal", "contribution": 0.17 },
+      { "name": "allergy_signal", "contribution": 0.15 }
+    ]
+  }
+]
