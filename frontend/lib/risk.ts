@@ -115,6 +115,8 @@ export function formatFeatureName(name: string): string {
     report_volume_7d: "7-day field report volume",
     wastewater_trend: "Wastewater trend",
     vector_density: "Vector density",
+    noaa_active_alerts: "NOAA active alerts",
+    usgs_water_observations: "USGS water observations",
   };
 
   return labels[name] ?? name.replace(/_/g, " ");

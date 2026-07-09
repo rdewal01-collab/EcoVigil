@@ -54,6 +54,29 @@ export interface RegionWithAssessment extends Region {
   assessment: HazardAssessment;
 }
 
+export interface LiveSourceStatus {
+  id: string;
+  name: string;
+  url: string;
+  status: "live" | "degraded" | "fallback";
+  summary: string;
+  updatedAt?: string;
+  recordCount?: number;
+}
+
+export interface NyLiveDashboard {
+  regions: RegionWithAssessment[];
+  highestRisk: RegionWithAssessment[];
+  stats: {
+    monitored: number;
+    elevatedCount: number;
+    lowCount: number;
+    reportCount: number;
+    highConfidencePercent?: number;
+  };
+  sources: LiveSourceStatus[];
+}
+
 export interface PublicGuidance {
   residents: string;
   clinicians: string;

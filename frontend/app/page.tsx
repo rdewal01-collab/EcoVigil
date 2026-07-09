@@ -1,14 +1,17 @@
-import {
-  getAllRegionsWithAssessments,
-  getDashboardStats,
-  getHighestRiskRegions,
-} from "@/lib/data";
 import { DashboardWorkspace } from "@/components/DashboardWorkspace";
+import { getNyLiveDashboard } from "@/lib/ny-live";
 
-export default function HomePage() {
-  const regions = getAllRegionsWithAssessments();
-  const stats = getDashboardStats();
-  const highestRisk = getHighestRiskRegions(4);
+export const dynamic = "force-dynamic";
 
-  return <DashboardWorkspace regions={regions} highestRisk={highestRisk} stats={stats} />;
+export default async function HomePage() {
+  const { regions, stats, highestRisk, sources } = await getNyLiveDashboard();
+
+  return (
+    <DashboardWorkspace
+      regions={regions}
+      highestRisk={highestRisk}
+      stats={stats}
+      sources={sources}
+    />
+  );
 }

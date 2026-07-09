@@ -6,6 +6,7 @@ import Link from "next/link";
 import {
   AlertTriangle,
   Bug,
+  DatabaseZap,
   Droplets,
   FilterX,
   HeartPulse,
@@ -17,12 +18,12 @@ import {
   Users,
   Waves,
 } from "lucide-react";
-import type { HazardCategory, RegionWithAssessment, RiskLevel } from "@/lib/types";
+import type { HazardCategory, LiveSourceStatus, RegionWithAssessment, RiskLevel } from "@/lib/types";
 import { HAZARD_LABELS } from "@/lib/risk";
+import { EnvVariablesPanel } from "@/components/EnvVariablesPanel";
 import { LakeList } from "@/components/LakeList";
 import { MapView } from "@/components/MapView";
 import { RiskBadge } from "@/components/RiskBadge";
-import { EnvVariablesPanel } from "@/components/EnvVariablesPanel";
 
 type DashboardStats = {
   monitored: number;
@@ -58,10 +59,12 @@ export function DashboardWorkspace({
   regions,
   highestRisk,
   stats,
+  sources = [],
 }: {
   regions: RegionWithAssessment[];
   highestRisk: RegionWithAssessment[];
   stats: DashboardStats;
+  sources?: LiveSourceStatus[];
 }) {
   const [query, setQuery] = useState("");
   const [riskFilter, setRiskFilter] = useState<"all" | RiskLevel>("all");
@@ -116,14 +119,14 @@ export function DashboardWorkspace({
     <main className="mx-auto max-w-7xl overflow-hidden px-4 py-6 sm:px-6 lg:py-8">
       <section className="grid min-w-0 gap-6 lg:grid-cols-[minmax(0,1fr)_390px] lg:items-start">
         <div className="min-w-0">
-          <p className="text-sm font-semibold text-slate-600">Biohazard mapping workspace</p>
+          <p className="text-sm font-semibold text-slate-600">New York live biohazard workspace</p>
           <h1 className="mt-3 max-w-4xl text-4xl font-bold tracking-normal text-slate-950 sm:text-5xl">
-            VigiReal maps outbreak, water, bloom, tick, NCD, and allergy risk in one operational view.
+            VigiReal now connects NY alerts, water observations, and health-data catalogs.
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-            VigiReal combines disease surveillance, environmental exposure signals, field reports, and
-            vulnerability layers into a multi-source public-health surveillance console. CDC NNDSS is treated
-            as the priority disease dataset; NCD and allergy feeds act as planning and burden layers.
+            This view is scoped to New York State. NOAA/NWS active alerts and USGS NY water observations
+            feed the risk model directly; NY Health Data catalog probes show which disease, NCD, and allergy
+            datasets are discoverable for deeper integration.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <a href="#risk-map" className="btn-primary">
@@ -193,13 +196,13 @@ export function DashboardWorkspace({
           icon={<ShieldCheck className="h-4 w-4" />}
           label="Monitored regions"
           value={String(stats.monitored)}
-          detail="With current assessments"
+          detail="NY regions"
         />
         <Metric
-          icon={<Users className="h-4 w-4" />}
-          label="Field reports"
-          value={String(stats.reportCount)}
-          detail="Community and staff signals"
+          icon={<DatabaseZap className="h-4 w-4" />}
+          label="Live sources"
+          value={String(sources.filter((source) => source.status === "live").length)}
+          detail={`${sources.length} configured`}
         />
         <Metric
           icon={<SlidersHorizontal className="h-4 w-4" />}
@@ -209,13 +212,50 @@ export function DashboardWorkspace({
         />
       </section>
 
+      {sources.length > 0 && (
+        <section className="mt-6 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+          <div className="flex items-center gap-2">
+            <DatabaseZap className="h-5 w-5 text-slate-700" />
+            <h2 className="text-lg font-semibold text-slate-950">NY Live Data Sources</h2>
+          </div>
+          <div className="mt-4 grid gap-3 md:grid-cols-2">
+            {sources.map((source) => (
+              <a
+                key={source.id}
+                href={source.url}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-lg border border-slate-200 bg-slate-50 p-4 transition hover:border-slate-300"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <p className="font-semibold text-slate-950">{source.name}</p>
+                  <span
+                    className={[
+                      "rounded-full px-2 py-1 text-xs font-semibold",
+                      source.status === "live"
+                        ? "bg-emerald-100 text-emerald-800"
+                        : source.status === "degraded"
+                          ? "bg-amber-100 text-amber-800"
+                          : "bg-slate-200 text-slate-700",
+                    ].join(" ")}
+                  >
+                    {source.status}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{source.summary}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section id="risk-map" className="mt-6 rounded-lg border border-slate-200 bg-white p-4 shadow-sm lg:p-5">
         <div className="mb-4 flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase text-slate-500">Live workspace</p>
             <h2 className="mt-1 text-2xl font-semibold text-slate-950">Risk Map</h2>
             <p className="mt-1 text-sm text-slate-500">
-              {filteredRegions.length} of {regions.length} regions shown.
+              {filteredRegions.length} of {regions.length} NY regions shown.
             </p>
           </div>
           <Controls
@@ -256,12 +296,12 @@ export function DashboardWorkspace({
       </section>
 
       <section className="mt-6 grid gap-4 md:grid-cols-3">
-        <HazardLayer icon={<Siren />} title="Outbreaks" text="NNDSS and syndrome anomaly tracking." />
-        <HazardLayer icon={<Droplets />} title="Water" text="Drinking and recreational contamination." />
-        <HazardLayer icon={<Waves />} title="Algal blooms" text="Satellite context plus field observations." />
-        <HazardLayer icon={<Bug />} title="Ticks" text="Vector, habitat, climate, and case signals." />
-        <HazardLayer icon={<HeartPulse />} title="NCD burden" text="Chronic disease as vulnerability context." />
-        <HazardLayer icon={<ThermometerSun />} title="Allergies" text="Pollen, air quality, and complaint patterns." />
+        <HazardLayer icon={<Siren />} title="Outbreaks" text="NY Health disease catalog discovery." />
+        <HazardLayer icon={<Droplets />} title="Water" text="USGS NY streamflow, stage, and temperature observations." />
+        <HazardLayer icon={<Waves />} title="Weather alerts" text="NOAA/NWS active alerts across New York." />
+        <HazardLayer icon={<Bug />} title="Ticks" text="NY disease datasets plus regional vector-risk context." />
+        <HazardLayer icon={<HeartPulse />} title="NCD burden" text="NY Health chronic disease catalog discovery." />
+        <HazardLayer icon={<ThermometerSun />} title="Allergies" text="NY Health asthma/allergy catalog discovery." />
       </section>
 
       <section className="mt-6">

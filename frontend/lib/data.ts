@@ -99,29 +99,33 @@ export function countByRisk(): Record<RiskLevel, number> {
 export function getDataSourcePlan() {
   return [
     {
-      name: "CDC NNDSS",
-      status: "Priority integration",
-      purpose: "Anchor notifiable infectious disease anomalies by county and syndrome.",
+      name: "NY Health Data catalog",
+      status: "Connected",
+      purpose:
+        "Discovers disease, chronic disease, asthma, and allergy datasets from the NY Health Data catalog.",
     },
     {
-      name: "State water quality and local advisories",
-      status: "Planned connector",
-      purpose: "Track contaminated drinking or recreational water and closure decisions.",
+      name: "USGS NY water observations",
+      status: "Connected",
+      purpose:
+        "Loads NY streamflow, gage height, and water temperature observations for water-risk context.",
     },
     {
-      name: "Satellite and HAB feeds",
-      status: "Inherited concept",
-      purpose: "Detect algal bloom context without treating satellite evidence as toxin proof.",
+      name: "NOAA/NWS NY alerts",
+      status: "Connected",
+      purpose: "Loads active New York weather and environmental alerts as live exposure context.",
     },
     {
-      name: "Tick surveillance and vector habitat",
-      status: "Planned connector",
-      purpose: "Estimate tick-borne illness risk with case, vector, climate, and habitat features.",
+      name: "Tick and vector risk",
+      status: "NY catalog discovery",
+      purpose:
+        "Uses NY disease dataset discovery plus regional vector-risk context until a dedicated vector feed is added.",
     },
     {
       name: "NCD and allergy datasets",
-      status: "Research layer",
-      purpose: "Expose chronic disease and allergy vulnerability as modifiers, not outbreak proof.",
+      status: "NY catalog discovery",
+      purpose:
+        "Discovers asthma, chronic disease, and allergy-related NY Health datasets as planning modifiers.",
     },
   ];
 }
